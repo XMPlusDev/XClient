@@ -24,17 +24,6 @@ list is tagged with the core it runs on — `X` for xray-core, `S` for sing-box.
 - **Light and dark themes**, with a selectable app language.
 - **Built-in log viewer** — inspect core output without leaving the app.
 
-## Supported protocols
-
-| Protocol | Transports / notes |
-| --- | --- |
-| VLESS | TCP, WS, XHTTP, with TLS |
-| VMess | TCP, WS, with TLS |
-| Shadowsocks | TCP |
-| Hysteria2 | QUIC / HYSTERIA, with TLS |
-| TUIC | QUIC, with TLS |
-| AnyTLS | TCP, with TLS |
-
 ## Screenshots
 
 ### Desktop
