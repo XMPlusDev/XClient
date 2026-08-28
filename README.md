@@ -1,6 +1,6 @@
 # XClient
 
-A proxy client for [XMPlus Panel](https://github.com/XMPlusDev) that supports **xray-core** and **sing-box**.
+A proxy client for [XMPlus Panel](https://github.com/XMPlusDev/XMPlusRelease) that supports **xray-core** and **sing-box**.
 
 XClient connects to nodes delivered by an XMPlus panel subscription and runs them through either
 xray-core or sing-box servers side by side. Each server in the
