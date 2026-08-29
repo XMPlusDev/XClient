@@ -1,0 +1,13 @@
+name = "ip2location-api"
+pages_build_output_dir = "dist"
+compatibility_date = "2025-08-01"
+compatibility_flags = ["nodejs_compat"]
+
+# The BIN lives in R2 and is read with ranged GETs — never loaded whole.
+# Create it once with:  npx wrangler r2 bucket create ip2location
+[[r2_buckets]]
+binding = "IP2LOCATION"
+bucket_name = "ip2location"
+
+[vars]
+NUXT_IP2LOCATION_BIN_KEY = "IP2LOCATION-LITE-DB5.IPV6.BIN"

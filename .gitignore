@@ -1,0 +1,8 @@
+node_modules
+.nuxt
+.output
+.wrangler
+dist
+.env
+*.BIN
+*.BIN.ZIP

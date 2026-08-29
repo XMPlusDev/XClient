@@ -1,0 +1,30 @@
+{
+  "name": "ip2location-api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "wrangler pages dev dist",
+    "deploy": "nuxt build && wrangler pages deploy dist",
+    "typecheck": "nuxt typecheck",
+    "bin:local": "node scripts/upload-bin.mjs --local",
+    "bin:remote": "node scripts/upload-bin.mjs --remote",
+    "test:bin": "node scripts/verify-bin.mjs"
+  },
+  "dependencies": {
+    "nuxt": "^4.0.0",
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "nitro-cloudflare-dev": "^0.2.2",
+    "typescript": "^5.6.0",
+    "vue-tsc": "^2.1.0",
+    "wrangler": "^4.0.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "esbuild@0.28.1": true,
+    "workerd@1.20260825.1": true
+  }
+}
