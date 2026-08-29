@@ -4,9 +4,6 @@ A Nuxt 4 app whose Nitro server routes read an IP2Location **BIN** database
 directly, deployed serverless on **Cloudflare Pages**. No third-party geo API,
 no database server, no per-query billing — just your own BIN file in R2.
 
-Currently wired to `IP2LOCATION-LITE-DB5.IPV6.BIN` (2025-08-15): 2.95M IPv4 and
-2.85M IPv6 ranges, 175 MB, returning country, region, city and coordinates.
-
 ## How it works
 
 Cloudflare Workers have no filesystem, so the BIN lives in R2 and is read with
@@ -93,7 +90,7 @@ the project.
 | `GET /api/health` | BIN metadata and cache counters |
 
 ```bash
-curl https://location.xmplus.dev/api/ip/8.8.8.8
+curl http://127.0.0.1:3000/api/ip/8.8.8.8
 ```
 
 ```json
